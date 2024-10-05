@@ -360,7 +360,22 @@ header.sticky .nav-bar{
     flex-direction: column;
 }
 
-                        /* About section  */
+.minisec-container{
+    display: flex;
+    width: 80%;
+    padding: 1em;
+    background-color: var(--card-bg-color);
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    align-items: stretch;
+    margin-top: 2em;
+}   
+
+.container-header{
+    top: 0;
+}
+
 #about-title{
     margin-top: 200px;
 }
@@ -369,20 +384,28 @@ header.sticky .nav-bar{
     text-align: center;
 }
 
+#timer{
+    font-family: monospace;
+    font-size: 2em;
+}
+
+#about-me-text{
+    font-size: 1.7em;
+}
+
+
 .con{
+    margin-bottom: 2em;
     display: flex;
+    flex: 1 1 0px;
 }
 
 .text-container{
     width: 100%;
     margin: auto;
-    justify-content: center;
     align-items: center;
     flex-basis: 70%;
     text-align: center;
-}
-
-.text-container{
     font-size: 1.6rem;
 }
 
