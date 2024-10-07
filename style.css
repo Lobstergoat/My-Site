@@ -742,6 +742,10 @@ footer a{
         margin-top: 70px;
     }
 
+    .minisec-container{
+        flex-direction: column;
+    }
+
     /* skills section  */
     .skills{
         margin-top: 100px;
@@ -789,6 +793,9 @@ footer a{
         margin-top: 100px;
     }
 
+    .minisec-container{
+        flex-direction: column;
+    }
 
     #about-title{
         margin-top: 70px;
