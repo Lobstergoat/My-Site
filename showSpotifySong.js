@@ -1,6 +1,6 @@
 
 var client_id = 'e1fce98fc477403aa30b0a9d6f439bd4';
-var client_secret = 'd92c9aeac688427ca620d8bb0ed50ee0';
+var client_secret = 'shhhhhhhh';
 
 var authOptions = {
   url: 'https://accounts.spotify.com/api/token',
