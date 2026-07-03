@@ -669,6 +669,7 @@ canvas {
 
 
 
+
 /* ==============================
    Stable p5 background layer
    ============================== */
@@ -754,4 +755,93 @@ footer {
 .btn {
     z-index: 1;
     overflow: hidden;
+}
+
+                        /* Projects section */
+
+.projects{
+    margin-top: 150px;
+}
+
+.projects .container .content{
+    width: 100%;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 28px;
+}
+
+.project-item{
+    display: flex;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--card-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 3px solid var(--second-color);
+    border-radius: 10px;
+    padding: 36px 30px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(223, 37, 84, 0.18);
+}
+
+.project-icon{
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgba(223, 37, 84, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.project-icon i{
+    color: var(--second-color);
+    font-size: 1.5em;
+}
+
+.project-card h3{
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+
+.project-card .project-tech{
+    margin-bottom: 14px;
+}
+
+.project-card p{
+    color: var(--third-color);
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 1000px){
+    .projects-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 560px){
+    .projects-list{
+        grid-template-columns: 1fr;
+    }
+
+    .project-card{
+        padding: 30px 24px;
+    }
 }
